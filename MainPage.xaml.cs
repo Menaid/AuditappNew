@@ -10,7 +10,7 @@ namespace AuditappNew
         public MainPage ( UserService userService )
         {
             InitializeComponent ( );
-            _userService = userService;
+            _userService = App.UserService;
             LoadUsers ( );
         }
 

@@ -9,6 +9,10 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="Shell" ApplyToDerivedTypes="True">
+                <Setter Property="ForegroundColor" Value="{StaticResource PrimaryPurple}" />
+                <Setter Property="TitleColor" Value="{StaticResource PrimaryPurple}" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

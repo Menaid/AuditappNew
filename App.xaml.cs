@@ -4,10 +4,13 @@ namespace AuditappNew
 {
     public partial class App:Application
     {
+        public static UserService UserService { get; private set; }
+
         public App ( UserService userService )
         {
             InitializeComponent ( );
-            MainPage = new NavigationPage ( new MainPage ( userService ) );
+            UserService = userService;
+            MainPage = new AppShell ( );
         }
     }
 }
